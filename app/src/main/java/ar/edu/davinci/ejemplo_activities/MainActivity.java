@@ -2,6 +2,7 @@ package ar.edu.davinci.ejemplo_activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openActivity(View view) {
-        Log.i("confirmacion", "Se hizo click");
+        Intent intent = new Intent(this, ActivityName.class);
+        startActivity(intent);
     }
 }
