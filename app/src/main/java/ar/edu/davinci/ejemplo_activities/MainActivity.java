@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void openActivity(View view) {
         Intent intent = new Intent(this, ActivityName.class);
+        // acá debería agregar el dato
+        intent.putExtra("nuevoDato", "Soy un dato");
         startActivity(intent);
     }
 }
